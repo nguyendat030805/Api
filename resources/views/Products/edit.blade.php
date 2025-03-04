@@ -5,7 +5,7 @@
         <h2>Chỉnh sửa sản phẩm</h2>
 
         @if ($errors->any())
-            <div class="alert alert-danger">
+            <div class="alert alert-danger">    
                 <ul>
                     @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
@@ -23,7 +23,7 @@
                 <input type="datetime-local" id="createdAt" name="createdAt"
                     value="{{ \Carbon\Carbon::parse($product['createdAt'])->format('Y-m-d\TH:i') }}" required
                     class="form-control">
-            </div>
+            </div>      
 
             <div class="mb-3">
                 <label for="name" class="form-label">Tên sản phẩm</label>
